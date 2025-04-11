@@ -33,14 +33,17 @@ function changeText2(){
   else
     element.value = "EN SAVOIR PLUS";
 }
-// Attendre que le DOM soit complètement chargé
 document.addEventListener("DOMContentLoaded", function() {
-  // Fonction pour appliquer un zoom de 80% uniquement au texte
   function applyTextZoom() {
-    const textElements = document.querySelectorAll('.content p, .content h1, .content h2, .content h3');
-    textElements.forEach(element => {
-      element.classList.add('text-zoom');
+    const welcomePage = document.querySelector('.eden');
+    const content = document.querySelectorAll('body > *:not(.eden)');
+
+    content.forEach(element => {
+      if (!element.classList.contains('zoom-75')) {
+        element.classList.add('zoom-75');
+      }
     });
+
     // Désactiver l'événement après la première interaction
     window.removeEventListener("click", applyTextZoom);
     window.removeEventListener("scroll", applyTextZoom);
@@ -51,8 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", applyTextZoom);
 });
 
-// Appliquer un zoom de 80% au chargement de la page
- // document.body.style.zoom = "75%";
+
 
 function initmap(){
   const place = {
