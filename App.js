@@ -33,6 +33,7 @@ function changeText2(){
   else
     element.value = "EN SAVOIR PLUS";
 }
+/*
 document.addEventListener("DOMContentLoaded", function() {
   function applyTextZoom() {
     const welcomePage = document.querySelector('.eden');
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("click", applyTextZoom);
   window.addEventListener("scroll", applyTextZoom);
 });
-
+*/
 
 
 function initmap(){
