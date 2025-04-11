@@ -288,6 +288,7 @@ swipe {  0% {
 }
 
 .standing{
+max-width: 80%;
 padding-bottom: 2rem;
 }
 
