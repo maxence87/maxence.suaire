@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="description" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="img/Slider2.png" rel="shortcut icon" >
+    <title>Portfolio Maxence Suaire</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+
+<body onload = "initmap()">
+    <div id="navbar">
+      <a class="link" href="#présentation">Présentation</a>
+      <a class="link" href="#equipement">Mes compétences</a>
+      <a class="link" href="home.html">Mes projets</a>
+      <a class="link" href="#dispo">Mes certifications</a>
+      <a class="link" href="home.html">Veille technologique</a>
+      <a class="link" href="remerciments.html">Remerciement</a>
+      <a class="link" href="#contact">Contact</a>
+    </div>
+    <div class="">
+      <h1 class="slider--title">PORTFOLIO MAXENCE SUAIRE</h1>
+      <a href="home.html"<button class="slider--btn" href="home.html">DÉCOUVRIR MES PROJETS</button></a>
+    </div>
+    
+    <div class="carousel">
+      <video id="background-video" autoplay loop muted>
+        <source src="img/Vidéo/20250411_1410_Futuristic Circuitry Vibes_remix_01jrjc4v1ee53bp3x1ks22jtzm.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </div>
+    
+    
+    <!--<div class="carousel">
+      <div class="viewport">
+          <div class="slide-container">
+            <div class="slide-2">
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide-1">
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide-0">
+            </div>
+          </div>
+      </div>
+    </div> !-->
+
+    <div class="standing" id="présentation">
+        <h2 class="subtitle__standing">PRÉSENTATION PERSONNEL</h2>
+        <p class="txt__standing">Je m'appelle <b>Maxence Suaire</b>, et je suis actuellement étudiant en <b>BTS Services Informatiques aux Organisations (SIO)</b> option SISR en alternance. 
+          Passionné par l'informatique, j'apprécie particulièrement le domaine des systèmes et réseaux, où j'ai l'opportunité d'allier théorie et pratique. J'aime ce que je fais, 
+          car chaque jour est une occasion d'apprendre, de relever de nouveaux défis techniques et de contribuer à des projets concrets qui me permettent de progresser dans ce métier
+           qui me passionne.<br>
+           
+        </p>
+
+        
+        <div class="bouton-entier">
+          <a target="_blank" href="img/CV_Maxence_Suaire.pdf" class="cv">
+            <h3>Mon CV</h3>
+          </a>
+          <a target="_blank" href="img/8-1 - BTS SIO - 2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthèse (1).pdf" class="fc">
+            <h3>Fiche compétence</h3>
+          </a>
+        </div>
+
+
+        <h2 class="subtitle__standing"> MON ENTREPRISE </h2>
+        <p class="txt__standing">J’effectue mon alternance au sein de l’entreprise <b>TCL</b> à Limoges, où je mets en pratique mes compétences en administration des systèmes et réseaux.
+<br><br>
+Au quotidien, j’interviens sur différentes missions allant de la gestion et la maintenance des infrastructures informatiques à la résolution de problèmes techniques et l’amélioration des performances des systèmes.
+<br><br>
+Travailler chez TCL me permet de développer mon expertise en conditions réelles, en m’adaptant aux besoins spécifiques de l’entreprise tout en renforçant mes compétences en sécurité, déploiement et maintenance des réseaux. Cette expérience est un véritable atout pour ma progression professionnelle, car elle me confronte à des problématiques concrètes et me permet d’acquérir une approche terrain essentielle dans ce domaine.
+
+      <div id="affichage2">
+        
+        <h2 class="subtitle__standing"> BTS SIO </h2>
+        <p class="txt__standing">Le <strong>BTS Services Informatiques aux Organisations (SIO)</strong> est une formation spécialisée qui prépare aux métiers de l’informatique en entreprise. J’ai choisi la spécialité <strong>SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</strong>, qui me forme à la gestion, la maintenance et la sécurisation des infrastructures informatiques.
+          Ce cursus me permet d’acquérir des compétences techniques essentielles, comme l’administration des réseaux, la mise en place de solutions sécurisées et l’optimisation des systèmes d’information. Grâce à l’alternance, j’ai l’opportunité d’appliquer mes connaissances en entreprise et de me confronter aux réalités du métier. Le <strong>BTS SIO</strong> est une formation complète qui allie théorie et pratique, et qui m’offre une base solide pour évoluer dans le domaine des systèmes et réseaux, avec pour objectif de devenir un professionnel compétent et autonome.
+        </p>
+      </div>
+            <input type="button" onclick="changeText2()" id="btn2" class="equipement__button" value="EN SAVOIR PLUS">        </input>
+    </div>
+
+
+    <section id="equipementgeneral" class="equipementgeneral">
+      <div id="equipement" class="standing">
+        <h2 class="subtitle__standing__competences">MES COMPÉTENCES</h2>
+
+  <div class="grid">
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/SQL.svg" alt="piscine">
+          <p class="equipement__name">My SQL</p>
+        </div>
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/HTML.svg" alt="jacuzzi">
+          <p class="equipement__name">HTML</p>
+        </div>
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/PYTHON.svg" alt="petanque">
+          <p class="equipement__name">Python</p>
+        </div>
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/WINDOWS.svg" alt="wifi">
+          <p class="equipement__name">Windows Server</p>
+        </div>
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/LINUX.svg" alt="parking">
+          <p class="equipement__name">Linux Debian</p>
+        </div>
+        
+      </div>
+      <div id="affichage">
+      <div class="grid">
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/CISCO.svg" alt="Cuisine ext">
+          <p class="equipement__name">Cisco</p>
+        </div>
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/PROXMOX.svg" alt="Télévision">
+          <p class="equipement__name">Proxmox / VirtualBox</p>
+        </div>
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/STORMSHIELD.svg" alt="ping-pong">
+          <p class="equipement__name">Stormshield</p>
+        </div>
+        <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/GLPI.svg" alt="climatisation">
+          <p class="equipement__name">Glpi</p>
+        </div>
+            <div class="equipement">
+          <img class="equipement__logo" src="img/Equipements/ZABBIX.svg" alt="chaise-haute">
+          <p class="equipement__name">Zabbix</p>
+        </div>
+      </div>
+      </div>
+      <input type="button" onclick="changeText()" id="btn1" class="equipement__button" value="VOIR PLUS"></input>
+    </div>
+    </section>
+    <section id="dispo" class="disponibilite">
+      <div class="divagenda">
+        <div class="dispo">
+          <h2 class="subtitle__disponibilite">MES CERTIFICATIONS</h2>
+          <p class="tarifs">Découvrez mes certifications obtenues au cours de mes études !</p>
+          <div class="grid__certif">
+            <a href="img/certification-mooc.pdf" class="certif" target="_blank">
+              <img class="logo__certif" src="img/Equipements/Certif1.png" alt="MOOC">
+              MOOC
+            </a>
+            <a href="img/certification-pix.pdf" class="certif" target="_blank">
+              <img class="logo__certif" src="img/Equipements/Certif2.png" alt="PIX">
+              PIX
+            </a>
+            <a href="img/CNSA.pdf" class="certif" target="_blank">
+              <img class="logo__certif" src="img/Equipements/Certif3.png" alt="STORMSHIELD">
+              STORMSHIELD
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact" class="standing">
+      <h2 class="subtitle__standing">CONTACT</h2>
+      <div class="tel">
+        <img class="coordones__logo1" src="img/tel.png" alt="telephone">
+        <a class="coordones1" href="tel:+33687669075"> +33687669075 </a>
+      </div>
+      <div class="mail">
+        <img class="coordones__logo" src="img/mail.png" alt="mail">
+        <a class="coordones" href="mailto:m.suaire@gmail.com"> m.suaire@gmail.com </a>
+      </div>
+    </div>
+    
+
+    <button id="scrollToTopBtn" class="scroll-to-top">
+      <i class="fas fa-chevron-up"></i>
+      <img src="img/arrow__up.png">
+    </button>
+
+    <footer id="footer" class="footer">
+      <h2 class="subtitle__emplacement">FOOTER</h2>
+      <div class="footer-container">
+        <!-- Nom du portfolio / Logo -->
+        <div class="footer-branding">
+          <h3>Portfolio Maxence Suaire</h3>
+          <p>Merci de votre visite !</p>
+        </div>
+        
+        <!-- Liens ou icônes réseaux sociaux (ex. Font Awesome) -->
+        <div class="footer-social">
+          <p>Retrouvez-moi sur :</p>
+          <a href="https://www.linkedin.com/in/maxence-suaire-b26414206/" aria-label="LinkedIn">
+            <img src="img/Linkedin.png">
+          </a>
+          <a href="#" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        
+        <!-- Informations de contact -->
+        <div class="footer-contact">
+          <ul>
+            <li><strong>Téléphone :</strong> <a href="+33687669075"> +33687669075</a></li>
+            <li><strong>Email :</strong> <a href="mailto:m.suaire@gmail.com">m.suaire@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>©2025 Maxence Suaire - Tous droits réservés.</p> 
+      </div>
+    </footer>
+</body>
+<script src="App.js"></script>
+</html>
