@@ -55,6 +55,22 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", applyTextZoom);
 });
 */
+document.addEventListener("DOMContentLoaded", function() {
+  // Appliquer un zoom de 80% à l'ensemble du site
+  document.body.style.zoom = "80%";
+  // ou utiliser transform pour une meilleure compatibilité
+  // document.body.style.transform = "scale(0.8)";
+  // document.body.style.transformOrigin = "0 0";
+
+  // Réinitialiser le zoom pour la classe .carousel
+  const carousel = document.querySelector('.carousel');
+  if (carousel) {
+      carousel.style.zoom = "125%"; // 100 / 0.8 = 125 pour compenser le zoom global
+      // ou utiliser transform pour une meilleure compatibilité
+      // carousel.style.transform = "scale(1.25)";
+      // carousel.style.transformOrigin = "0 0";
+  }
+});
 
 
 function initmap(){
