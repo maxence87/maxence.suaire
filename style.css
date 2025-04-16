@@ -59,7 +59,7 @@ a {
 }
 
 .eden {
-    zoom: 125%; /* 100 / 0.8 = 125 pour compenser le zoom global */
+    zoom: 100%; /* 100 / 0.8 = 125 pour compenser le zoom global */
     /* ou utiliser transform pour une meilleure compatibilité */
     /* transform: scale(1.25); */
     /* transform-origin: 0 0; */
