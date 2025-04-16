@@ -58,11 +58,18 @@ a {
     text-decoration: none;
 }
 
-.eden{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-zoom: 156.25%;
+.eden {
+    zoom: 125%; /* 100 / 0.8 = 125 pour compenser le zoom global */
+    /* ou utiliser transform pour une meilleure compatibilité */
+    /* transform: scale(1.25); */
+    /* transform-origin: 0 0; */
+
+    /* Centrer .eden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Assurez-vous que .eden prend toute la hauteur de la vue */
 }
 
 .slider--title {
