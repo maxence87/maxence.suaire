@@ -56,28 +56,38 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 */
 document.addEventListener("DOMContentLoaded", function() {
-  // Appliquer un zoom de 80% à l'ensemble du site
-  document.body.style.zoom = "80%";
-  // ou utiliser transform pour une meilleure compatibilité
-  // document.body.style.transform = "scale(0.8)";
-  // document.body.style.transformOrigin = "0 0";
+    // Appliquer un zoom de 80% à l'ensemble du site
+    document.body.style.zoom = "80%";
+    // ou utiliser transform pour une meilleure compatibilité
+    // document.body.style.transform = "scale(0.8)";
+    // document.body.style.transformOrigin = "0 0";
 
-  // Réinitialiser le zoom pour la classe .carousel
-  const carousel = document.querySelector('.carousel');
-  if (carousel) {
-      carousel.style.zoom = "125%"; // 100 / 0.8 = 125 pour compenser le zoom global
-      // ou utiliser transform pour une meilleure compatibilité
-      // carousel.style.transform = "scale(1.25)";
-      // carousel.style.transformOrigin = "0 0";
-  }
-});
+    // Réinitialiser le zoom pour la classe .eden et la centrer
     const eden = document.querySelector('.eden');
     if (eden) {
-        eden.style.zoom = "100%"; // 125 / 0.8 = 156.25 pour compenser le zoom global
+        eden.style.zoom = "125%"; // 100 / 0.8 = 125 pour compenser le zoom global
         // ou utiliser transform pour une meilleure compatibilité
-        // eden.style.transform = "scale(1.5625)";
+        // eden.style.transform = "scale(1.25)";
         // eden.style.transformOrigin = "0 0";
+
+        // Centrer .eden
+        eden.style.display = "flex";
+        eden.style.justifyContent = "center";
+        eden.style.alignItems = "center";
+        eden.style.textAlign = "center";
+        eden.style.height = "100vh"; // Assurez-vous que .eden prend toute la hauteur de la vue
     }
+
+    // Réinitialiser le zoom pour la classe .carousel
+    const carousel = document.querySelector('.carousel');
+    if (carousel) {
+        carousel.style.zoom = "125%"; // 100 / 0.8 = 125 pour compenser le zoom global
+        // ou utiliser transform pour une meilleure compatibilité
+        // carousel.style.transform = "scale(1.25)";
+        // carousel.style.transformOrigin = "0 0";
+    }
+});
+
 
 function initmap(){
   const place = {
