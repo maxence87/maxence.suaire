@@ -69,7 +69,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 65vh; /* Assurez-vous que .eden prend toute la hauteur de la vue */
+    height: 150vh; /* Assurez-vous que .eden prend toute la hauteur de la vue */
 }
 
 .slider--title {
