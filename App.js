@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
     const eden = document.querySelector('.eden');
     if (eden) {
-        eden.style.zoom = "156.25%"; // 125 / 0.8 = 156.25 pour compenser le zoom global
+        eden.style.zoom = "106.25%"; // 125 / 0.8 = 156.25 pour compenser le zoom global
         // ou utiliser transform pour une meilleure compatibilité
         // eden.style.transform = "scale(1.5625)";
         // eden.style.transformOrigin = "0 0";
