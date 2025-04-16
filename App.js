@@ -71,9 +71,13 @@ document.addEventListener("DOMContentLoaded", function() {
       // carousel.style.transformOrigin = "0 0";
   }
 });
-  const eden = document.querySelector('.eden');
-  if (eden) {
-     eden.style.zoom = "125%";
+    const eden = document.querySelector('.eden');
+    if (eden) {
+        eden.style.zoom = "156.25%"; // 125 / 0.8 = 156.25 pour compenser le zoom global
+        // ou utiliser transform pour une meilleure compatibilité
+        // eden.style.transform = "scale(1.5625)";
+        // eden.style.transformOrigin = "0 0";
+    }
 
 function initmap(){
   const place = {
