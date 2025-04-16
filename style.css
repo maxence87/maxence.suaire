@@ -1018,6 +1018,7 @@ a.slide__next,
   margin-bottom: 20px;
   font-weight: var(--fw-bold);
   text-align: center; /* Centre le titre */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .remerciements-container p {
@@ -1025,6 +1026,7 @@ a.slide__next,
   line-height: 1.6;
   font-weight: var(--fw-normal);
   margin: 60px 0; /* Ajoute un espacement entre les paragraphes */
+  font-family: 'Montserrat', sans-serif;
 }
 
 
