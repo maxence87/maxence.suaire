@@ -71,7 +71,9 @@ document.addEventListener("DOMContentLoaded", function() {
       // carousel.style.transformOrigin = "0 0";
   }
 });
-
+  const eden = document.querySelector('.eden');
+  if (eden) {
+     eden.style.zoom = "125%";
 
 function initmap(){
   const place = {
