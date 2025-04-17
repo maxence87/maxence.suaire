@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 */
 document.addEventListener("DOMContentLoaded", function() {
   // Appliquer un zoom de 80% à l'ensemble du site
-  document.body.style.zoom = "90%";
+  document.body.style.zoom = "80%";
   // ou utiliser transform pour une meilleure compatibilité
   // document.body.style.transform = "scale(0.8)";
   // document.body.style.transformOrigin = "0 0";
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const eden = document.querySelector('.eden');
 if (eden) {
-    eden.style.zoom = "140%"; // 100 / 0.8 = 125 pour compenser le zoom global
+    eden.style.zoom = "120%"; // 100 / 0.8 = 125 pour compenser le zoom global
     // ou utiliser transform pour une meilleure compatibilité
     // eden.style.transform = "scale(1.25)";
     // eden.style.transformOrigin = "0 0";
