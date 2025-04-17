@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const eden = document.querySelector('.eden');
 if (eden) {
-    eden.style.zoom = "125%"; // 100 / 0.8 = 125 pour compenser le zoom global
+    eden.style.zoom = "140%"; // 100 / 0.8 = 125 pour compenser le zoom global
     // ou utiliser transform pour une meilleure compatibilité
     // eden.style.transform = "scale(1.25)";
     // eden.style.transformOrigin = "0 0";
