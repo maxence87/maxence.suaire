@@ -1031,27 +1031,11 @@ a.slide__next,
 }
 
 
-
-.parcours-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin: 3rem 5vw;
-}
 .parcours__container {
+  display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-
-.parcours__item h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: var(--fw-bold);
-}
-
-.parcours__item p {
-  font-weight: var(--fw-normal);
+  width: 100%;
 }
 
 .parcours__item {
@@ -1066,6 +1050,7 @@ a.slide__next,
   border: 1px solid #000;
   margin: 1rem 0;
   box-sizing: border-box;
+  font-family: 'Montserrat';
 }
 
 .parcours__item h3 {
