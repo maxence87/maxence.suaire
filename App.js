@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 */
 document.addEventListener("DOMContentLoaded", function() {
   // Appliquer un zoom de 80% à l'ensemble du site
-  document.body.style.zoom = "70%";
+  document.body.style.zoom = "80%";
   // ou utiliser transform pour une meilleure compatibilité
   // document.body.style.transform = "scale(0.8)";
   // document.body.style.transformOrigin = "0 0";
