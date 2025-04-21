@@ -1007,12 +1007,13 @@ a.slide__next,
 
 /* Styles pour la section Remerciements */
 .remerciements-container {
-  padding: 20px;
-  max-width: 800px;
-  margin: 50px auto; /* Centre le contenu horizontalement */
-  text-align: left; /* Aligne le texte à gauche pour une meilleure lisibilité */
-  color: var(--clr-dark); /* Utilisation de la couleur noire définie dans les variables */
-  font-family: 'Montserrat', sans-serif; /* Utilisation de la même police que le reste du site */
+  padding: 2rem;
+  max-width: 900px;
+  margin: 7rem auto 3rem auto; /* ← ici on décale vers le bas */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--clr-dark);
 }
 
 .remerciements-container h2 {
