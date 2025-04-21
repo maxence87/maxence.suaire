@@ -1011,7 +1011,7 @@ a.slide__next,
   max-width: 900px;
   margin: 7rem auto 3rem auto; /* ← ici on décale vers le bas */
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1,4rem;
   line-height: 1.8;
   color: var(--clr-dark);
 }
